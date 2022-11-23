@@ -1,0 +1,233 @@
+$color-font: #1e1e1e;
+$color-accent: #254cac;
+$color-font-2: #fff;
+$padding: 1.5em;
+$font-size: 1em;
+
+body {
+  margin: 0;
+  font-size: 1em;
+  font-family: "Inter";
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter.ttf") format("truetype");
+  font-weight: 400;
+  font-display: block;
+  font-style: normal;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+}
+
+button {
+  color: $color-font-2;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0;
+  border-radius: 4px;
+  padding: calc($padding/3) $padding;
+  font-size: 1em;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+
+//
+
+header {
+  background-color: $color-accent;
+  padding: 1em;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $color-accent;
+}
+
+.nav-menu__sports {
+  color: $color-font-2;
+  margin: 0;
+  list-style: none;
+  padding: 0 $padding $padding;
+  font-size: 0.75em;
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 1em;
+
+  li {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    gap: 0.5em;
+
+    img {
+      height: 2em;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slide .container {
+  background-image: url("../assets/img/slider_base.jpg");
+  background-size: cover;
+  min-width: 100vw;
+  height: 65vw;
+}
+
+.slides .content {
+  padding: 2em 1em;
+  font-size: 0.8em;
+}
+
+.highlight {
+  display: table-cell;
+  font-weight: bold;
+  background-color: yellow;
+}
+
+.title {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+///
+///
+///
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 0 1em 1em;
+
+  img {
+    border-radius: 4px 4px 0 0;
+  }
+
+  .card-title {
+    font-weight: bold;
+    padding: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding: .5em 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    color: $color-font;
+    text-decoration: none;
+    
+    img {
+      height: 1.5em;
+    }
+  }
+  
+  .wrapper {
+    display: flex;
+    gap: .5em;
+
+  }
+  .wrapper-horse {
+    width: 3.88em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .horse-icon {
+    filter: brightness(10%);
+    height: 1em;
+    margin-right: .3em;
+  }
+
+  .card-link {
+    color: #338ff1;
+    text-transform: uppercase;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: row-reverse;
+    text-decoration: none;
+  }
+}
+
+.ad {
+  background: url("../assets/img/banner-win.png");
+  background-color: #338ff1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 4px;
+  margin: 0 1em 1em;
+
+  .content {
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+    span:last-child {
+      color: yellow;
+      font-size: 1.9em;
+      font-weight: bold;
+    }
+  }
+}
