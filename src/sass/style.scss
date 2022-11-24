@@ -1,6 +1,6 @@
 $color-font: #1e1e1e;
 $color-accent: #254cac;
-$color-font-2: #fff;
+$color-font-light: #fff;
 
 /* Box sizing rules */
 *,
@@ -34,8 +34,16 @@ img {
 
 @font-face {
   font-family: "Inter";
-  src: url("../assets/fonts/Inter.ttf") format("truetype");
+  src: url("../assets/fonts/Inter-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-display: block;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 900;
   font-display: block;
   font-style: normal;
 }
@@ -46,7 +54,7 @@ body {
 }
 
 button {
-  color: $color-font-2;
+  color: $color-font-light;
   font-family: inherit;
   background-color: rgba(255, 255, 255, 0.2);
   border: 0;
@@ -95,12 +103,16 @@ button {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 
+  @media (min-width: 70em) {
+    width: 14em;
+  }
+
   &::-webkit-scrollbar {
     display: none;
   }
 
   &__scroll {
-    color: $color-font-2;
+    color: $color-font-light;
     font-size: 0.75em;
     text-transform: uppercase;
 
@@ -177,16 +189,16 @@ button {
 
   .content {
     padding: 2em 1em;
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(0.9rem, 3vw, 1.9rem);
     mark {
       background-color: #ffe682;
       padding: 0.1em 0.2em;
       font-weight: bold;
     }
     &__title {
-      font-size: clamp(1rem, 7vw, 5rem);
+      font-size: clamp(1rem, 6vw, 7rem);
       font-weight: bold;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.4em;
     }
   }
 }
