@@ -9,264 +9,238 @@
     <title>GoldenRace</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <nav class="nav-menu">
-          <button>
-            <img src="assets/icons/sort_by_alpha_black_24dp.svg" alt="" />
-            Virtuals
-          </button>
-          <button>
-            <img src="assets/icons/receipt_black_24dp.svg" alt="" /> My bets
-          </button>
-        </nav>
-      </header>
+    <header class="header">
+      <nav class="header__nav-menu">
+        <button>
+          <img
+            src="assets/icons/sort_by_alpha_black_24dp.svg"
+            alt="icon"
+            class="nav-menu__icon"
+          />
+          Virtuals
+        </button>
+        <button>
+          <img
+            src="assets/icons/receipt_black_24dp.svg"
+            alt="icon"
+            class="nav-menu__icon"
+          />
+          My bets
+        </button>
+      </nav>
+    </header>
 
-      <main>
-        <nav class="nav-menu scroll">
-          <ul class="nav-menu__sports">
-            <li>
-              <img src="assets/icons/timer.svg" alt="" />
-              <p>Last minute</p>
-            </li>
-            <li>
-              <img src="assets/icons/soccer.svg" alt="" />
-              <p>Football</p>
-            </li>
-            <li>
-              <img src="assets/icons/horse.svg" alt="" />
-              <p>Horse Racing</p>
-            </li>
-            <li>
-              <img src="assets/icons/pets_black_24dp.svg" alt="" />
-              <p>Greyhounds</p>
-            </li>
-            <li>
-              <img
-                src="assets/icons/sports_motorsports_black_24dp.svg"
-                alt=""
-              />
-              <p>Motor</p>
-            </li>
-            <li>
-              <img src="assets/icons/sports_mma_black_24dp.svg" alt="" />
-              <p>Fighting</p>
-            </li>
-            <li>
-              <img src="assets/icons/sports_basketball_black_24dp.svg" alt="" />
-              <p>3x3 Basket</p>
-            </li>
-          </ul>
-        </nav>
+    <main class="container">
+      <nav class="secondary-nav-menu">
+        <ul class="secondary-nav-menu__scroll">
+          <li class="secondary-nav-menu__item">
+            <img
+              src="assets/icons/timer.svg"
+              alt="icon"
+              class="secondary-nav-menu__icon"
+            />
+            Last minute
+          </li>
+          <li class="secondary-nav-menu__item">
+            <img
+              src="assets/icons/soccer.svg"
+              alt="icon"
+              class="secondary-nav-menu__icon"
+            />
+            Football
+          </li>
+          <li class="secondary-nav-menu__item">
+            <img
+              src="assets/icons/horse.svg"
+              alt="icon"
+              class="secondary-nav-menu__icon"
+            />
+            Horse Racing
+          </li>
+          <li class="secondary-nav-menu__item">
+            <img
+              src="assets/icons/pets_black_24dp.svg"
+              alt="icon"
+              class="secondary-nav-menu__icon"
+            />
+            Greyhounds
+          </li>
+          <li class="secondary-nav-menu__item">
+            <img
+              src="assets/icons/sports_motorsports_black_24dp.svg"
+              alt="icon"
+              class="secondary-nav-menu__icon"
+            />
+            Motor
+          </li>
+          <li class="secondary-nav-menu__item">
+            <img
+              src="assets/icons/sports_mma_black_24dp.svg"
+              alt="icon"
+              class="secondary-nav-menu__icon"
+            />
+            Fighting
+          </li>
+          <li class="secondary-nav-menu__item">
+            <img
+              src="assets/icons/sports_basketball_black_24dp.svg"
+              alt="icon"
+              class="secondary-nav-menu__icon"
+            />
+            3x3 Basket
+          </li>
+        </ul>
+      </nav>
 
-        <div class="slider">
-          <ul class="slides">
-            <li class="slide">
-              <div class="container">
-                <div class="content">
-                  <div class="title">Combi Bonus</div>
-                  <p>
-                    <span class="highlight">Up to 20%</span> in any football
-                    <br />
-                    multiple
-                  </p>
+      <div class="slider">
+        <ul class="slides">
+          <li class="slide">
+            <div class="content">
+              <div class="content__title">Combi Bonus</div>
+              <p>
+                <mark> Up to 20%</mark><br />
+                in any football<br />
+                multiple
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <section class="cards-grid">
+        <div class="card">
+          <img
+            src="assets/img/card-football.jpg"
+            alt="Football-img"
+            class="card__image"
+          />
+          <div class="card__title">Football</div>
+          <ul title="Football" class="card__content">
+            <li>
+              <a href="#" class="list-item">
+                <div class="list-item__wrapper">
+                  <img
+                    src="assets/img/shield-ingland.png"
+                    alt="shield"
+                    class="list-item__icon"
+                  />
+                  England League
                 </div>
-              </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="list-item">
+                <div class="list-item__wrapper">
+                  <img
+                    src="assets/img/shield-spain.png"
+                    alt="shield"
+                    class="list-item__icon"
+                  />
+                  Spain League
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="list-item">
+                <div class="list-item__wrapper">
+                  <img
+                    src="assets/icons/euro.svg"
+                    alt="vector"
+                    class="list-item__icon"
+                  />
+                  Euro Champions
+                </div>
+              </a>
             </li>
           </ul>
+          <a class="card__link" href="#">More</a>
         </div>
 
-        <div class="container">
-          <div class="card">
-            <img src="assets/img/card-football.jpg" alt="Football-img" />
-            <div class="content">
-              <div class="card-title">Football</div>
-              <ul title="Football">
-                <li>
-                  <a href="#">
-                    <div class="wrapper">
-                      <img src="assets/img/shield-ingland.png" alt="shield" />
-                      England League
-                    </div>
-                    <img
-                      src="assets/icons/chevron_right_black_24dp.svg"
-                      alt="vector"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="wrapper">
-                      <img src="assets/img/shield-spain.png" alt="shield" />
-                      Spain League
-                    </div>
-                    <img
-                      src="assets/icons/chevron_right_black_24dp.svg"
-                      alt="vector"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="wrapper">
-                      <img src="assets/icons/euro.svg" alt="vector" />
-                      Euro Champions
-                    </div>
-                    <img
-                      src="assets/icons/chevron_right_black_24dp.svg"
-                      alt="vector"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <a class="card-link" href="#">More</a>
-          </div>
-
-          <div class="ad">
-            <div class="content">
-              <span>Win Jackpot</span>
-              <span>€3,210.50</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="assets/img/card-horse.jpg" alt="Horse-Racing-img" />
-            <div class="content">
-              <div class="card-title">Horse Racing</div>
-              <ul title="Horse Racing">
-                <li>
-                  <a href="#">
-                    Dubai Racecourse
-                    <div class="wrapper-horse">
-                      <img
-                        src="assets/icons/horse.svg"
-                        alt="vector"
-                        class="horse-icon"
-                      />
-                      12
-                      <img
-                        src="assets/icons/chevron_right_black_24dp.svg"
-                        alt="vector"
-                      />
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#"
-                    >Tokyo Royal State
-                    <div class="wrapper-horse">
-                      <img
-                        src="assets/icons/horse.svg"
-                        alt="vector"
-                        class="horse-icon"
-                      />
-                      8
-                      <img
-                        src="assets/icons/chevron_right_black_24dp.svg"
-                        alt="vector"
-                      />
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#"
-                    >Dubai Racecourse
-                    <div class="wrapper-horse">
-                      <img
-                        src="assets/icons/horse.svg"
-                        alt="vector"
-                        class="horse-icon"
-                      />
-                      6
-                      <img
-                        src="assets/icons/chevron_right_black_24dp.svg"
-                        alt="vector"
-                      />
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <a class="card-link" href="#">More</a>
-          </div>
-
-          <div class="card">
-            <img src="assets/img/card-greyhounds.jpg" alt="Greyhounds-img" />
-            <div class="content">
-              <div class="card-title">Greyhounds</div>
-              <ul title="Greyhounds">
-                <li>
-                  <a href="#"
-                    >London Stadium
-                    <img
-                      src="assets/icons/chevron_right_black_24dp.svg"
-                      alt="vector"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    >London Stadium
-                    <img
-                      src="assets/icons/chevron_right_black_24dp.svg"
-                      alt="vector"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    >London Stadium
-                    <img
-                      src="assets/icons/chevron_right_black_24dp.svg"
-                      alt="vector"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-            <a class="card-link" href="#">More</a>
-          </div>
-
-          <div class="mosaic">
-            <div class="card">
-              <img src="assets/img/card-motor.jpg" alt="Motor" />
-              <div class="card-title">
-                <a class="card-title-link" href="#">
-                  Motor
-                  <img
-                    src="assets/icons/chevron_right_black_24dp.svg"
-                    alt="vector"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img src="assets/img/card-fighting.jpg" alt="Fighting" />
-              <div class="card-title">
-                <a class="card-title-link" href="#">
-                  Fighting
-                  <img
-                    src="assets/icons/chevron_right_black_24dp.svg"
-                    alt="vector"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img src="assets/img/card-basket.jpg" alt="3x3 Basket" />
-              <div class="card-title">
-                <a class="card-title-link" href="#">
-                  3x3 Basket
-                  <img
-                    src="assets/icons/chevron_right_black_24dp.svg"
-                    alt="vector"
-                  />
-                </a>
-              </div>
-            </div>
+        <div class="card banner">
+          <div class="banner__content">
+            <span>Win Jackpot</span>
+            <span class="price">€3,210.50</span>
           </div>
         </div>
-      </main>
-    </div>
+
+        <div class="card">
+          <img
+            src="assets/img/card-horse.jpg"
+            alt="Horse-Racing-img"
+            class="card__image"
+          />
+          <div class="card__title">Horse Racing</div>
+          <ul title="Horse Racing" class="card__content">
+            <li>
+              <a href="#" class="list-item no-after">
+                Dubai Racecourse
+                <div class="list-item__horse">12</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="list-item no-after">
+                Tokyo Royal State
+                <div class="list-item__horse">8</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="list-item no-after">
+                Dubai Racecourse
+                <div class="list-item__horse">6</div>
+              </a>
+            </li>
+          </ul>
+          <a class="card__link" href="#">More</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/card-greyhounds.jpg"
+            alt="Greyhounds-img"
+            class="card__image"
+          />
+          <div class="card__title">Greyhounds</div>
+          <ul title="Greyhounds" class="card__content">
+            <li>
+              <a href="#" class="list-item"> London Stadium </a>
+            </li>
+            <li>
+              <a href="#" class="list-item"> Santa Monica Stadium </a>
+            </li>
+            <li>
+              <a href="#" class="list-item"> Golden Palace Stadium </a>
+            </li>
+          </ul>
+          <a class="card__link" href="#">More</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/card-motor.jpg"
+            alt="Motor"
+            class="card__image full-image"
+          />
+          <a href="#" class="card__title list-item"> Motor </a>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/card-fighting.jpg"
+            alt="Fighting"
+            class="card__image image-height"
+          />
+          <a href="#" class="card__title list-item"> Fighting </a>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/card-basket.jpg"
+            alt="3x3 Basket"
+            class="card__image image-height"
+          />
+          <a href="#" class="card__title list-item"> 3x3 Basket </a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
